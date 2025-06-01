@@ -7,6 +7,14 @@ Vagrantfile templates that satisfy common needs.
 
 \#vagrant \#vagrantfile \#configuration-template
 
+## References
+
+The following materials are referenced during the development of this product:
+
+* [vagrant/templates/commands/init/Vagrantfile.min.erb at def5ccc · hashicorp/vagrant](https://github.com/hashicorp/vagrant/blob/def5ccc/templates/commands/init/Vagrantfile.min.erb)  
+  [vagrant/templates/commands/init/Vagrantfile.erb at def5ccc42e9bc45d5f52f378bea940dc017ef0f8 · hashicorp/vagrant](https://github.com/hashicorp/vagrant/blob/def5ccc42e9bc45d5f52f378bea940dc017ef0f8/templates/commands/init/Vagrantfile.erb)  
+  Provide the reference implementation of the of the Vagrantfile template.
+
 ## Licensing
 
 Unless otherwise noted([comment headers](https://reuse.software/spec-3.3/#comment-headers)/[REUSE.toml](https://reuse.software/spec-3.3/#reusetoml)), this product is licensed under [the 4.0 International version of the Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/4.0/), or any of its more recent versions of your preference.
