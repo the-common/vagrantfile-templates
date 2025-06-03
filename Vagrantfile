@@ -12,6 +12,8 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0+ OR LicenseRef-Apache-2.0-If-Not-Used-In-Template-Projects
 
 Vagrant.configure("2") do |config|
+  # Find more Vagrant boxes at:
+  # https://portal.cloud.hashicorp.com/vagrant/discover?architectures=amd64&providers=virtualbox&query=bento
   config.vm.box = "bento/ubuntu-24.04"
   #config.vm.box = "bento/debian-12"
   #config.vm.box = "bento/fedora-41"
