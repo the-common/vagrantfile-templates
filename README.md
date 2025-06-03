@@ -14,6 +14,8 @@ The following materials are referenced during the development of this product:
 * [vagrant/templates/commands/init/Vagrantfile.min.erb at def5ccc · hashicorp/vagrant](https://github.com/hashicorp/vagrant/blob/def5ccc/templates/commands/init/Vagrantfile.min.erb)  
   [vagrant/templates/commands/init/Vagrantfile.erb at def5ccc42e9bc45d5f52f378bea940dc017ef0f8 · hashicorp/vagrant](https://github.com/hashicorp/vagrant/blob/def5ccc42e9bc45d5f52f378bea940dc017ef0f8/templates/commands/init/Vagrantfile.erb)  
   Provide the reference implementation of the of the Vagrantfile template.
+* [Multi-Machine | Vagrant | HashiCorp Developer](https://developer.hashicorp.com/vagrant/docs/multi-machine)  
+  Explains how to define multiple machines in a Vagrantfile.
 
 ## Licensing
 
