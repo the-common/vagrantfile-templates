@@ -33,21 +33,21 @@ Vagrant.configure("2") do |config|
     v.default_nic_type = "virtio"
   end
 
-  config.vm.define "app" do |app|
-    app.vm.hostname = "app"
-    app.vm.network "private_network", ip: "192.168.56.11"
+  config.vm.define "dev" do |dev|
+    dev.vm.hostname = "dev"
+    dev.vm.network "private_network", ip: "192.168.56.11"
 
-    app.vm.provider :virtualbox do |v|
-      v.name = "#{project_name} - Application server"
+    dev.vm.provider :virtualbox do |v|
+      v.name = "#{project_name} - Development environment"
     end
   end
 
-  config.vm.define "db" do |db|
-    db.vm.hostname = "db"
-    db.vm.network "private_network", ip: "192.168.56.12"
+  config.vm.define "test" do |test|
+    test.vm.hostname = "test"
+    test.vm.network "private_network", ip: "192.168.56.12"
 
-    db.vm.provider :virtualbox do |v|
-      v.name = "#{project_name} - Database server"
+    test.vm.provider :virtualbox do |v|
+      v.name = "#{project_name} - Testing environment"
     end
   end
 end
