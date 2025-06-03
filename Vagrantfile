@@ -35,6 +35,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "app" do |app|
     app.vm.hostname = "app"
+
     app.vm.provider :virtualbox do |v|
       v.name = "#{project_name} - Application server"
     end
@@ -42,6 +43,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "db" do |db|
     db.vm.hostname = "db"
+
     db.vm.provider :virtualbox do |v|
       v.name = "#{project_name} - Database server"
     end
