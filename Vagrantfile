@@ -12,6 +12,9 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0+ OR LicenseRef-Apache-2.0-If-Not-Used-In-Template-Projects
 
 Vagrant.configure("2") do |config|
+  # Get the directory name containing this Vagrantfile to use as VM name prefix
+  project_name = File.basename(Dir.pwd)
+
   # Find more Vagrant boxes at:
   # https://portal.cloud.hashicorp.com/vagrant/discover?architectures=amd64&providers=virtualbox&query=bento
   config.vm.box = "bento/ubuntu-24.04"
@@ -33,14 +36,14 @@ Vagrant.configure("2") do |config|
   config.vm.define "app" do |app|
     app.vm.hostname = "app"
     app.vm.provider :virtualbox do |v|
-      v.name = "Application server"
+      v.name = "#{project_name} - Application server"
     end
   end
 
   config.vm.define "db" do |db|
     db.vm.hostname = "db"
     db.vm.provider :virtualbox do |v|
-      v.name = "Database server"
+      v.name = "#{project_name} - Database server"
     end
   end
 end
