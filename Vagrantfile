@@ -8,6 +8,9 @@
 # * Vagrantfile | Vagrant | HashiCorp Developer
 #   https://developer.hashicorp.com/vagrant/docs/vagrantfile
 #
+# This work is based on "The common Vagrantfile templates" project:
+# https://gitlab.com/the-common/vagrantfile-templates
+#
 # Copyright 2025 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0+ OR LicenseRef-Apache-2.0-If-Not-Used-In-Template-Projects
 
